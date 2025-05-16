@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artur Silva | Portifolio</title>
+    <link rel="stylesheet" href="port.css">
+</head>
+<body>
+    <div class="particulas"></div>
+
+    <nav class="navegacao">
+        <div class="container-nav">
+            <a href="https://github.com/Silvz67" target="_blank" class="logo">
+                <img src="imgs/gitLogo.png" alt="GitHub" width="24" height="24" />
+            </a>
+            <ul class="menu">
+                <li>
+                    <a href="#inicio" class="menu-link">inicio</a>
+                </li>
+                <li>
+                    <a href="#sobre" class="menu-link">sobre</a>
+                </li>
+                <li>
+                    <a href="#projetos" class="menu-link">projetos</a>
+                </li>
+                <li>
+                    <a href="#contatos" class="menu-link">contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main id="inicio" class="cabecalho">
+        <img src="imgs/imgsla.jpeg" alt="Foto de de Artur Silva" class="foto-perfil">
+        <h1 class="h1-main">Artur Silva</h1>
+        <p class="p-main">desenvolvedor Front-end</p>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">sobre mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">Olá, meu nome é José Artur da Silva e sou um desenvolvedor front-end apaixonado
+                por criar experiências digitais incríveis. Estou sempre buscando aprimorar minhas habilidades e criar
+                soluções inovadoras para os desafios dos clientes.</p>
+        </div>
+      <section>
+            <h3 class="Especialidades">Especialidades</h3>
+
+            <div class="imagens-especialidades">
+                <img src="imgs/HTML.png" alt="HTML5">
+                <img src="imgs/CSS.png" alt="CSS3"> 
+                <img src="imgs/JavaScript.png" alt="JS">
+            </div>
+        </section>
+    </section>
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+
+            <div class="projetos-card">
+                <img src="imgs/imgsla2.png" alt="projeto 1" class="projetos-imagens">
+                <div class="caixa-texto-projetos">
+                    <h3 class="info-projetos">Z-videos Lanches</h3>
+                    <p class="paragrafo-projetos">
+                        Loja virtual de lanches completa e com WhatsApp direto para melhorar o atendimento ao usuário!
+                    </p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="imgs/imgsla3.png" alt="projeto 2" class="projetos-imagens">
+                <div class="caixa-texto-projetos">
+                    <h3 class="info-projetos">Hotel Stars</h3>
+                    <p class="paragrafo-projetos">
+                        Site de reserva virtual para quartos da sua preferência — ideal para viajantes!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+   <section class="contatos" id="contatos">
+    <h2 class="contato-titulo">Entre em Contato</h2>
+
+    <form class="formulario-contato" id="formulario" onsubmit="enviarMensagem(event)">
+    <div class="grupo-form">
+        <input id="nome" placeholder="Nome" class="campo-form" />
+    </div>
+
+    <div class="grupo-form">
+        <textarea id="mensagem" class="campo-form" placeholder="Digite sua mensagem"></textarea>
+    </div>
+    <button type="submit" class="buttom-form">Enviar mensagem WhatsApp</button>
+</form>
+
+</section>
+
+    <script src="port.js"></script>
+</body>
+
+</html>
