@@ -164,7 +164,6 @@ body {
     border-radius: 16px;
     border: 1px solid var(--vidro);
     overflow: hidden;
-    backdrop-filter: blur(10px);
     transition: transform 0.3s;
 }
 
@@ -172,6 +171,17 @@ body {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
     transform: translateY(-10px) scale(1.03);
     transform: scale(1.03);
+}
+
+.Link-projeto{
+    text-align: center;
+    text-decoration: none;
+    color: var(--primaria);
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: block;
+    margin-top: 1rem;
+    transition: color 0.3s;
 }
 
 .projetos-imagens {
