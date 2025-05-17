@@ -302,3 +302,23 @@ footer img {
 footer img:hover {
   transform: scale(1.2);
 }
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  nav a {
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    display: block;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
