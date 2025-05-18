@@ -39,12 +39,16 @@
         <p class="p-main">desenvolvedor Front-end</p>
     </main>
 
-    <section id="sobre" class="sobre">
-        <h2 class="sobre-titulo">sobre mim</h2>
-        <div class="sobre-caixa">
-            <p class="sobre-paragrafo">Olá! Meu nome é José Artur da Silva, sou estudante do curso técnico em Informática para Internet no IFAL – Campus Viçosa. Sou um desenvolvedor front-end apaixonado por criar experiências digitais incríveis. Estou sempre em busca de aprimorar minhas habilidades e desenvolver soluções inovadoras para os desafios dos clientes.</p>
-        </div>
-        <section>
+    <section class="sobre">
+  <h2>Quem sou eu?</h2>
+  <div class="sobre-container">
+    <p><strong>José Artur da Silva</strong></p>
+    <p>Estudante de Informática para Internet no <strong>IFAL – Campus Viçosa</strong>.</p>
+    <p>Sou um desenvolvedor <span class="destaque">front-end</span> apaixonado por experiências digitais incríveis.</p>
+    <p>Busco sempre <span class="destaque">aprimorar habilidades</span> e criar <span class="destaque">soluções inovadoras</span> para os desafios dos clientes.</p>
+  </div>
+</section>
+
             <h3 class="Especialidades">Especialidades</h3>
 
             <div class="imagens-especialidades">
@@ -90,20 +94,26 @@
     </section>
 
     <section class="contatos" id="contatos">
-        <h2 class="contato-titulo">Entre em Contato</h2>
+  <h2 class="contato-titulo">Entre em Contato</h2>
 
-        <form class="formulario-contato" id="formulario" onsubmit="enviarMensagem(event)">
-            <div class="grupo-form">
-                <input id="nome" placeholder="Nome" class="campo-form" />
-            </div>
+  <form class="formulario-contato" id="formulario" onsubmit="enviarMensagem(event)">
+    
+    <div class="grupo-form">
+      <i class="fa fa-user icon-form"></i>
+      <input type="text" id="nome" placeholder="Nome" class="campo-form" required />
+    </div>
 
-            <div class="grupo-form">
-                <textarea id="mensagem" class="campo-form" placeholder="Digite sua mensagem"></textarea>
-            </div>
-            <button type="submit" class="buttom-form">Enviar mensagem WhatsApp</button>
-        </form>
+    <div class="grupo-form">
+      <i class="fa fa-comment icon-form"></i>
+      <textarea id="mensagem" class="campo-form" placeholder="Digite sua mensagem" rows="5" required></textarea>
+    </div>
 
-    </section>
+    <button type="submit" class="buttom-form">
+      <i class="fa fa-whatsapp"></i> Enviar mensagem WhatsApp
+    </button>
+  </form>
+</section>
+
 
     <script src="port.js"></script>
 </body>

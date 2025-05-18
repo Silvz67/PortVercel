@@ -114,7 +114,9 @@ body {
     margin: 20px;
 }
 .sobre {
-    padding: 6rem 2rem;
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #f0f0f0;
 }
 .sobre-caixa {
     padding: 2rem;
@@ -124,6 +126,22 @@ body {
     border: 1px solid var(--vidro);
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.05);
+}
+.sobre-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  backdrop-filter: blur(10px);
+}
+
+.sobre-container .destaque {
+  color: #00ffc3;
+  font-weight: bold;
 }
 .sobre-titulo {
     font-size: 3rem;
@@ -205,50 +223,103 @@ body {
     text-align: center;
     margin-bottom: 50px;
 }
+
 .contato {
     padding: 6rem 2rem;
+    text-align: center;
 }
+
+.contato-titulo {
+    font-size: 3rem;
+    color: var(--claro);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contatos {
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
 .formulario-contato {
     max-width: 600px;
     margin: 0 auto;
-    padding: 2rem;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 1px solid var(--vidro);
+    padding: 2.5rem 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 4px solid var(--secundaria);
     border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(7px);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
+
+.grupo-form {
+    position: relative;
+}
+
+.icon-form {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    color: var(--secundaria);
+    font-size: 1.2rem;
+    pointer-events: none;
+}
+
 .campo-form {
     width: 100%;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 8px;
+    padding: 1rem 1.2rem 1rem 3rem;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 12px;
     color: var(--claro);
     border: 1px solid var(--vidro);
+    font-size: 1rem;
     outline: none;
+    transition: 0.3s ease;
+    resize: none;
+}
+textarea.campo-form {
+    height: 80px;
+    resize: none;
+    border: 2 px solid var(--secundaria);
+}
+.campo-form::placeholder {
+    color: rgba(255, 255, 255, 0.4);
 }
 
 .campo-form:focus {
     border-color: var(--secundaria);
-    box-shadow: 0 0 10px rgba(42, 157, 143, 0.3);
+    box-shadow: 0 0 0 3px rgba(42, 157, 143, 0.2);
+    background: rgba(255, 255, 255, 0.07);
 }
-.campo-form {
-    margin-bottom: 1rem;
-    resize: none;
-}
+
 .buttom-form {
     color: var(--claro);
     background: linear-gradient(50deg, var(--primaria), var(--secundaria));
     padding: 1rem 2rem;
-    border-radius: 8px;
+    border-radius: 12px;
     border: none;
     cursor: pointer;
     font-weight: bold;
+    font-size: 1.1rem;
     width: 100%;
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 20px rgba(42, 157, 143, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
 }
+
 .buttom-form:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 5px 15px rgba(42, 157, 143, 0.4);
+    background: linear-gradient(50deg, var(--secundaria), var(--primaria));
+    transform: scale(1.03);
+    box-shadow: 0 0 10px var(--secundaria), 0 0 25px rgba(42, 157, 143, 0.5);
 }
+
 .particulas {
     position: fixed;
     top: 0;
