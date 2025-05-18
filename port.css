@@ -311,6 +311,7 @@ textarea.campo-form {
     transition: 0.3s ease;
     box-shadow: 0 4px 20px rgba(42, 157, 143, 0.3);
     display: flex;
+    transition: transform 0.3s, box-shadow 0.3s;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
@@ -385,15 +386,16 @@ footer img {
 footer img:hover {
   transform: scale(1.2);
 }
-@media (max-width: 768px) {
-  .container-nav {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    gap: 0.5rem;
-  }
-
+menu-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background: linear-gradient(90deg, var(--primaria), var(--secundaria));
+    transition: width 0.3s ease;
+}
   .menu {
     gap: 1.5rem;
   }
@@ -402,4 +404,3 @@ footer img:hover {
     font-size: 1rem;
     padding: 0.3rem;
   }
-}
