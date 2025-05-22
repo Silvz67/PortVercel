@@ -65,7 +65,7 @@ body {
     height: 2px;
     width: 0%;
     background: linear-gradient(90deg, var(--primaria), var(--secundaria));
-    transition: width 0.3s ease;
+    transition: width 0.8s ease;
 }
 
 .menu-link:hover::after {
